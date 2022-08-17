@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e312315c-491f-40c8-8668-76cb2d7eae3a" name="Default Changelist" comment="burger focus">
+      <change beforePath="$PROJECT_DIR$/../15_cross-browser/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../15_cross-browser/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../15_cross-browser/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../15_cross-browser/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../15_cross-browser/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../15_cross-browser/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../17_grid/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/../17_grid/css/media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../17_grid/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../17_grid/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../17_grid/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../17_grid/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1tquQV8IqB5wkPe20rhlKvfg1Fn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../13_javascript" />
+    <property name="list.type.of.created.stylesheet" value="AUTO_DETECTED" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\1\Desktop\git6\weblayout\11_adaptive-layout-desktop\fonts" />
+      <recent name="C:\Users\1\Desktop\git6\weblayout\11_adaptive-layout-desktop\css" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e312315c-491f-40c8-8668-76cb2d7eae3a" name="Default Changelist" comment="" />
+      <created>1623508927788</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623508927788</updated>
+      <workItem from="1623508929627" duration="52314000" />
+      <workItem from="1623991677662" duration="29546000" />
+      <workItem from="1624861912723" duration="69000" />
+      <workItem from="1624862038500" duration="76847000" />
+      <workItem from="1625477713400" duration="45533000" />
+      <workItem from="1625654279904" duration="30210000" />
+      <workItem from="1625926922669" duration="4965000" />
+      <workItem from="1626077209332" duration="158000" />
+      <workItem from="1626094483899" duration="39895000" />
+      <workItem from="1626676722377" duration="65892000" />
+      <workItem from="1627282692297" duration="34440000" />
+      <workItem from="1627972367557" duration="275000" />
+      <workItem from="1651246766992" duration="20000" />
+    </task>
+    <task id="LOCAL-00001" summary="revisions">
+      <created>1625514565552</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1625514565552</updated>
+    </task>
+    <task id="LOCAL-00002" summary="revisions 2">
+      <created>1625515829232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1625515829232</updated>
+    </task>
+    <task id="LOCAL-00003" summary="pix perf 22 07">
+      <created>1626957030050</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626957030050</updated>
+    </task>
+    <task id="LOCAL-00004" summary="burger">
+      <created>1627426341974</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1627426341974</updated>
+    </task>
+    <task id="LOCAL-00005" summary="burger, slash, flex for header">
+      <created>1627494736198</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627494736198</updated>
+    </task>
+    <task id="LOCAL-00006" summary="burger focus">
+      <created>1627495720504</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627495720504</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="revisions" />
+    <MESSAGE value="revisions 2" />
+    <MESSAGE value="pix perf 22 07" />
+    <MESSAGE value="burger" />
+    <MESSAGE value="burger, slash, flex for header" />
+    <MESSAGE value="burger focus" />
+    <option name="LAST_COMMIT_MESSAGE" value="burger focus" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

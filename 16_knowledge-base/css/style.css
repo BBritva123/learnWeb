@@ -1,0 +1,437 @@
+@font-face {
+  font-family: OpenSans, sans-serif;
+  src: url('../fonts/OpenSans-Regular.eot');
+  src: local('OpenSans Regular'), local('OpenSans-Regular'),
+  url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+  url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans', sans-serif;
+  src: url('../fonts/OpenSans-SemiBold.eot');
+  src: local('OpenSans SemiBold'), local('OpenSans-SemiBold'),
+  url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+  url('../fonts/OpenSans-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('../fonts/Roboto-Regular.eot');
+  src: local('Roboto Regular'), local('Roboto-Regular'),
+  url('../fonts/Roboto-regular.woff2') format('woff2'),
+  url('../fonts/Roboto-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --border-select: 1px solid #CCB26E;
+  --border-form: 1px solid #FF5C00;
+  --color-button-form: #FF5C00;
+  --color-body: #424242;
+  --color-text-main: #333333;
+  --color-input-checked: #ccb26e;
+  --color-select-cheched: #ccb26e;
+}
+
+
+body {
+  align-content: flex-start;
+  align-items: flex-start;
+  background-color: var(--color-body);
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 70px;
+
+}
+
+.categories__block {
+  background-color: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 70px;
+  min-height: 309px;
+  padding: 21px 30px 21px 30px;
+  width: 176px;
+  vertical-align: top;
+}
+
+.categories__heading {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+}
+
+.checkbox__string {
+  color: var(--color-text-main);
+  display: block;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  padding-left: 24px;
+  padding-top: 22px;
+  position: relative;
+  width: 100%;
+  /*height: 19px;*/
+
+}
+
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__input+.checkbox__custom {
+  border-radius: 3px;
+  border: 1px solid #999;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  width: 15px;
+  vertical-align: center;
+}
+
+.checkbox__input+.checkbox__custom {
+  border-radius: 3px;
+  border: 1px solid var(--color-input-checked);
+  bottom: -1px;
+  content: '';
+  left: -1px;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  padding-bottom: 10px;
+  right: -1px;
+  top: -1px;
+  transition: opacity .3s ease-in-out;
+  vertical-align: center;
+}
+
+.checkbox__input:checked+.checkbox__custom:before {
+  background: url("../img/Rectangle 99.svg") no-repeat center;
+  opacity: 1;
+}
+
+
+.choices {
+  border-radius: 10px;
+  display: inline-block;
+  height: 39px;
+  max-width: 176px;
+  margin-top: 70px;
+  margin-left: 54px;
+  vertical-align: top;
+}
+
+.choices__list--single {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  padding-left: 5px;
+  padding-top: 0;
+}
+
+.choices__inner, .is-open .choices__inner {
+  background: #FFFFFF;
+  border-radius: 10px;
+  height: 39px;
+  width: 176px;
+}
+
+.is-open .choices__inner,
+.is-open .choices__list--dropdown {
+  border-color: var(--color-select-cheched);
+  min-height: 39px;
+}
+
+.is-open .choices__list--dropdown {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  padding-top: 20px;
+  top: 85%;
+  z-index: -1;
+}
+
+/*галочка*/
+.choices[data-type*=select-one]::after {
+  border: none;
+  box-sizing: border-box;
+  right: 19px;
+  content: url("../img/choices-notopen.svg");
+  height: 8px;
+  margin-top: 0;
+  top: 9px;
+  width: 8px;
+
+}
+
+.choices[data-type*=select-one].is-open::after {
+  content: url("../img/choices-open.svg");
+  top: 15px;
+
+}
+
+/*дефолтное значение селекта*/
+.is-selected {
+  display: none;
+}
+
+.choices__list--dropdown .choices__item--selectable::after {
+  display: none;
+}
+
+.choices__list--dropdown .choices__item--selectable {
+  padding-right: 0;
+}
+
+/*карта*/
+.map__platform {
+  background-color: transparent;
+  display: inline-block;
+  height: 460px;
+  margin-top: 23px;
+  margin-left: 58px;
+  position: relative;
+  width: 460px;
+  vertical-align: top;
+}
+
+.map__block {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.map__text {
+  color: #FFFFFF;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 19px;
+  max-width: 100%;
+  text-align: center;
+}
+
+
+[class *='ground-pane'] {
+  border-radius: 10px;
+  filter: grayscale(1);
+}
+
+.shape__map {
+  background-color: white;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.ymaps-2-1-79-copyrights-pane,
+.ymaps-2-1-79-controls-pane,
+.ymaps-2-1-79-map-copyrights-promo {
+  display: none;
+}
+
+
+/*scrollbar */
+
+.simplebar-content-wrapper {
+  overflow: auto;
+}
+
+.scrollbar__block {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 30px 10px 29px;
+  display: inline-block;
+  height: 310px;
+  margin-top: 70px;
+  margin-left: 54px;
+  width: 399px;
+}
+
+.simplebar-scrollbar {
+  /*height: 100%;*/
+
+}
+
+.simplebar-visible .simplebar-scrollbar {
+  /* height: 70px; */
+  opacity: 1;
+  transform: translate3d(0px, 230px, 0px);
+  width: 6px;
+}
+
+.simplebar-scrollbar:before {
+  background-color: #CCB26E;
+  /* height: 70px; */
+  opacity: 1;
+  width: 6px;
+}
+
+.text__scrollbar {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 172%;
+}
+
+.simplebar-track.simplebar-vertical {
+  bottom: 5px;
+  /*height: 133%;*/
+  right: 3px;
+  top: 6px;
+  width: 11px;
+}
+
+/*forms*/
+
+.forms__block {
+  background-color: #282828;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 70px;
+  margin-left: 58px;
+  min-height: 410px;
+  padding: 21px 30px 29px 30px;
+  position: relative;
+  width: 440px;
+
+}
+
+.form {
+  color: #fff;
+}
+
+.input__description-form {
+  align-items: center;
+  color: #FF5C00;
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 5px;
+}
+
+.input__description-form:not(:first-child) {
+  margin-top: 14px;
+}
+
+.form__input {
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #FF5C00;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #999999;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 5px;
+  min-height: 60px;
+  padding-left: 20px;
+  width: 100%;
+  /* display: flex; */
+}
+
+.form__button {
+  background-color: #FF5C00;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 31px;
+  min-height: 60px;
+  text-align: center;
+  width: 50%;
+}
+
+.text__form {
+  padding-left: 20px;
+}
+
+.tooltip__block {
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 70px;
+  margin-left: 58px;
+  min-height: 20px;
+  padding: 20px 29px;
+  position: relative;
+  width: 375px;
+}
+
+.tooltip__text {
+  color: #333333;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  margin: 0;
+  width: 100%;
+}
+
+.tooltip__symbol {
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.tooltip-symbol path {
+  transition: fill .5s ease-in-out;
+}
+
+.tooltip__symbol:hover path {
+  fill:#ccb26e; 
+}
+
+.tippy-box[data-theme~='theme-tooltip'] {
+  border-radius: 0;
+  background-color: #666;
+  color: #FFFFFF;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 7px 15px 8px 15px;
+}
+
+.tippy-box[data-theme~='theme-tooltip'] > .tippy-arrow::before {
+  border-top-color: #666;
+  
+}

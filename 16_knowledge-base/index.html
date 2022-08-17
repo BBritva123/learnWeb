@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>16 modul</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="public/assets/styles/base.css" /> <!--нужен для селекта!!! НЕ УДАЛЯТЬ!-->
+  <link rel="stylesheet" href="public/assets/styles/choices.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="categories__block">
+    <h3 class="categories__heading">Категории:</h3>
+    <label class="checkbox__string">
+      <input class="checkbox__input" type="checkbox"> Динозавры
+      <span class="checkbox__custom"></span>
+    </label>
+    <label class="checkbox__string">
+      <input class="checkbox__input" type="checkbox"> Медведи
+      <span class="checkbox__custom"></span>
+    </label>
+    <label class="checkbox__string">
+      <input class="checkbox__input" type="checkbox"> Косули
+      <span class="checkbox__custom"></span>
+    </label>
+    <label class="checkbox__string">
+      <input class="checkbox__input" type="checkbox"> Лисы
+      <span class="checkbox__custom"></span>
+    </label>
+    <label class="checkbox__string">
+      <input class="checkbox__input" type="checkbox"> Волки
+      <span class="checkbox__custom"></span>
+    </label>
+    <label class="checkbox__string">
+      <input class="checkbox__input" type="checkbox"> Олени и лоси
+      <span class="checkbox__custom"></span>
+    </label>
+  </section>
+  <select class="select__block js-choice" aria-label="Выбор материала">
+    <option value="0" disabled selected>Материал</option>
+    <option value="1">Древесина</option>
+    <option value="2">Металл</option>
+    <option value="3">Камень</option>
+    <option value="4">Пластик</option>
+    <option value="5">Композитный</option>
+    <option value="6">Гипс</option>
+  </select>
+  <section class="map__platform">
+    <p class="map__text">В качестве адреса для маркера используйте: Франция, Иль-де-Франс, Париж, X округ Парижа, улица
+      дю Фобур Сен Дени 54</p>
+    <div class="map__block" id="map">
+      <div class="shape__map"></div>
+    </div>
+  </section>
+  <section class="scrollbar__block" data-simplebar>
+    <p class="text__scrollbar">
+      Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно
+      развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены
+      отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный
+      эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее:
+      непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом,
+      однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что
+      социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты
+      для первоочередных требований.
+    </p>
+  </section>
+  <section class="forms__block">
+    <form action="" class="form" id="form">
+      <label class="input__description-form">
+        <span class="text__form">Как Вас зовут?</span>
+        <input class="form__input" id="name" type="text" name="name" data-validate-field="name" placeholder="Имя*">
+      </label>
+
+      <label class="input__description-form">
+        <span class="text__form">Укажите Ваш телефон</span>
+        <input class="form__input" id="phone" type="tel" name="phone" data-validate-field="tel"
+          data-validate-rules="phone" placeholder="Телефон*">
+      </label>
+
+      <label class="input__description-form">
+        <span class="text__form">Укажите Ваш e-mail</span>
+        <input class="form__input" id="email" type="email" name="mail" data-validate-field="mail" placeholder="E-mail*">
+      </label>
+      <button class="form__button" type="submit">Заказать</button>
+    </form>
+  </section>
+  <section class="tooltip__block">
+    <div class="tooltip__text">
+      Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления
+      внешнеэкономических политик
+      <span class="tooltip__symbol" id="tooltip">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
+            fill="#bcbcbc" />
+        </svg>
+      </span>
+    </div>
+  </section>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+  <script src="js/inputmask.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script defer src="public/assets/scripts/choices.min.js"></script>
+  <script defer type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+      // Создание карты.
+      var myMap = new ymaps.Map("map", {
+        center: [48.872185, 2.354224],
+        zoom: 12,
+      });
+      var myPlacemark = new ymaps.Placemark([48.872185, 2.354224], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/Subtract.svg',
+        iconImageSize: [30, 42],
+        iconImageOffset: [-3, -42],
+      });
+      myMap.geoObjects.add(myPlacemark);
+    }
+    </script>
+  <script defer src="public/assets/scripts/choices.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+  <script defer>
+    // const validate = new window.JustValidate('#form');
+
+    // документация
+
+
+    const validation = new JustValidate('#form', {
+  errorFieldCssClass: 'is-invalid',
+});
+
+validation
+  .addField('#name', [
+    {
+      rule: 'minLength',
+      value: 3,
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+    },
+  ])
+  .addField('#email', [
+    {
+      rule: 'required',
+      errorMessage: 'Field is required',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Email is invalid!',
+    },])
+    .addField('#phone', [
+    {
+      rule: 'minLength',
+      value: 10,
+    },]
+    )
+
+
+
+
+    // const validate = new window.JustValidate('#form');
+
+    // validate
+
+    //   .addField('#name', [
+    //     {
+    //       rule: 'minLength',
+    //       value: 2,
+    //     },
+    //     {
+    //       rule: 'maxLength',
+    //       value: 15,
+    //     },
+    //   ])
+    //   .addField('#phone', [
+    //     {
+    //       rule: 'minLength',
+    //       value: 10,
+    //       errorMessage: 'Phone is invalid!',
+    //     },
+    //   ])
+    //   .addField('#email', [
+    //     {
+    //       rule: 'required',
+    //       errorMessage: 'Email is required',
+    //     },
+    //     {
+    //       rule: 'email',
+    //       errorMessage: 'Email is invalid!',
+    //     },
+    //   ]);
+      </script>
+  <script defer>
+    let selector = document.querySelector('input[type = "tel"]');
+
+    let im = new Inputmask("+7(999)999-99-99");
+    im.mask(selector);
+
+    // ютуб
+
+    // function validateForms(selector, rules) {
+    //   new window.JustValidate(selector, {
+    //     rules: rules,
+    //     submitHandler: function (form, value, ajax) {
+    //       console.log(form)
+    //       let formData = new FormData(form);
+
+    //       fetch("mail.php", {
+    //         method: "POST",
+    //         body: formData
+    //       })
+    //         .then(function (data) {
+    //           console.log(data)
+    //           console.log("Go")
+    //           form.reset()
+    //         })
+    //     }
+    //   })
+    // }
+
+    // validateForms('.forms', { email: { required: true, email: true }, tel: { required: true } })
+
+    // из урока
+
+    // new JustValidate(form, {
+    //   rules: {
+    //     name: {
+    //       requered: true,
+    //       minLength: 2,
+    //       maxLength: 10,
+    //     },
+    //     tel: {
+    //       requered: true,
+    //       function: (name, value) => {
+    //         const phone = selector.Inputmask.unmaskedvalue()
+    //         return Number(phone) && phone.length === 10
+
+    //       }
+    //     },
+    //     mail: {
+    //       requered: true,
+    //       email: true,
+    //     }
+    //   }
+    // })
+
+  </script>
+
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script>
+    tippy('#tooltip', {
+      animation: 'perspective',
+      content: 'Глава 2,страница 176',
+      delay: 50,
+      duration: 1000,
+      maxWidth: '185px',
+      // placement: 'bottom',
+      // followCursor: 'true',
+      theme: 'theme-tooltip',
+    });
+
+  </script>
+  <script defer src="js/index.js"></script>
+</body>
+
+</html>
